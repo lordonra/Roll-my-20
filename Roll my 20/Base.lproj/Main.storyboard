@@ -40,7 +40,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SP6-R1-0Oc" userLabel="Middle View">
                                         <rect key="frame" x="0.0" y="296.5" width="414" height="225"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice_1" translatesAutoresizingMaskIntoConstraints="NO" id="zOk-qr-zxA">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice_1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zOk-qr-zxA">
                                                 <rect key="frame" x="147" y="52.5" width="120" height="120"/>
                                             </imageView>
                                         </subviews>
@@ -58,6 +58,9 @@
                                                 <state key="normal" title="Roll your Fate!">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="rollButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Ki-DL-Isc"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -81,6 +84,9 @@
                             <constraint firstItem="Cua-ud-5Fi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yMg-gx-OsI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="diceImageView" destination="zOk-qr-zxA" id="23h-b3-zSz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
