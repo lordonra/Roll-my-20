@@ -41,12 +41,16 @@
                                         <rect key="frame" x="0.0" y="296.5" width="414" height="225"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice_1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zOk-qr-zxA">
-                                                <rect key="frame" x="147" y="52.5" width="120" height="120"/>
+                                                <rect key="frame" x="95" y="0.5" width="224" height="224"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="224" id="ZyG-Gd-WBq"/>
+                                                    <constraint firstAttribute="height" constant="224" id="y7S-DN-Y2g"/>
+                                                </constraints>
                                             </imageView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="zOk-qr-zxA" firstAttribute="centerX" secondItem="SP6-R1-0Oc" secondAttribute="centerX" id="Kyv-EN-2Ih"/>
-                                            <constraint firstItem="zOk-qr-zxA" firstAttribute="centerY" secondItem="SP6-R1-0Oc" secondAttribute="centerY" id="Rjr-y5-RDp"/>
+                                            <constraint firstItem="zOk-qr-zxA" firstAttribute="centerY" secondItem="SP6-R1-0Oc" secondAttribute="centerY" id="7pl-dz-lMy"/>
+                                            <constraint firstItem="zOk-qr-zxA" firstAttribute="centerX" secondItem="SP6-R1-0Oc" secondAttribute="centerX" id="Jfi-b0-LuP"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Gn-E8-FG7" userLabel="Bottom View">
